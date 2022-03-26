@@ -1,0 +1,48 @@
+.form {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #FFFF;
+    padding: 10px;
+    box-shadow: 0px -1px 5px;
+}
+
+.form div {
+    margin-bottom: 15px;
+}
+
+.form div label {
+    display: block;
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.form div input,
+.form div textarea {
+    width: 100%;
+    padding: 9px 5px;
+    font-size: 15px;
+    border: 2px solid #6a1b9a;
+    outline: none;
+    border-radius: 5px;
+}
+
+.btn {
+    text-align: right;
+}
+
+.btn button {
+    background-color: #880e4f;
+    color: #FFF;
+    padding: 12px 15px;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background-color: #c2185b;
+}

@@ -1,0 +1,34 @@
+.item {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.image img{
+    border: 4px solid #4a148c;
+    width: 100%;
+}
+
+.content h2 {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn button {
+    background-color: #FFF;
+    color: #880e4f;
+    padding: 10px 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    user-select: none;
+    border: 2px solid #880e4f;
+}
+
+.btn button:hover {
+    background-color: #ad1457;
+    color: #FFF;
+    border: 3px solid #e91e63;
+    transition: ease 0.5s;
+
+}

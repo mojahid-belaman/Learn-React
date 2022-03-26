@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #EEE;
+}
+
+.container {
+  margin: 20px;
+}
+
+.container h1 {
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #FFF;
+  width: 400px;
+  height: 140px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.card .content {
+  float: left;
+}
+
+.card .btn {
+  align-self: flex-end;
+}
+
+.card .btn button,
+.container .modal button {
+  background-color: #b71c1c;
+  color: #FFF;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  
+}
+
+.card .btn button:hover,
+.container .modal .delete:hover {
+  background-color: #c62828;
+}
+
+.container .modal {
+  background-color: #FFF;
+  text-align: center;
+  width: 400px;
+  height: 140px;
+  padding: 40px 0 0 0 ;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.container .modal p {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.container .modal .cancel {
+  margin-right: 50px;
+  background-color: #FFF;
+  color: #b71c1c;
+  border: 1px solid #b71c1c;
+}
+
+.container .modal .cancel:hover {
+  background-color: #b71c1c;
+  color: #FFF;
+}
+
+.container .backdrop {
+  background-color: rgba(0, 0, 0, 0.562);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}

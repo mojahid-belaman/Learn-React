@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import MeetupList from "../components/meetups/MeetupList"
 
 const data = [
@@ -25,6 +26,20 @@ const data = [
 ];
 
 function AllMeetups() {
+    const [isLoading, setLoading] = useState(false);
+    const [loadMeetup, setMeetup] = useState([]);
+
+    useEffect(() => {
+        fetch('https://learn-react-c02da-default-rtdb.firebaseio.com/meetup.json')
+        .then((respose) => {
+            return respose.json();
+        })
+        .then((data) => {
+            setLoading(true)
+            setMeetup(data);
+        })
+        console.log('useEffect');
+    }, [loadMeetup]);
     return (
         <div>
             <h1>This Is Page AllMeetups!</h1>
